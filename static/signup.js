@@ -108,7 +108,7 @@ var valid_username=function(username){
     return reg.test(username)
 }
 var valid_email=function(email){
-    var reg = new RegExp("^[a-zA-Z0-9_-\\u4E00-\\u9FFF]+@[a-zA-Z0-9_-]+(.[a-zA-Z0-9_-]+)+$", "g");
+    var reg = new RegExp("^[.a-zA-Z0-9_\\u4E00-\\u9FFF]+(\\+[.a-zA-Z0-9_\\u4E00-\\u9FFF]+)*@[a-zA-Z0-9_-]+(.[a-zA-Z0-9_-]+)+$", "g");
     return reg.test(email)
 }
 var validcheck=function(username, password, agpassword, email){
